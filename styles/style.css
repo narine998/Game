@@ -1,0 +1,159 @@
+body {
+    background-color: black;
+    overflow: hidden;
+    height: 100%;
+    margin:0;
+    text-transform: uppercase;
+    color:rgb(238, 237, 240);
+}
+.container {
+    background-image: url('../images/Chalkboard.jpg');
+    font-family: 'Gloria Hallelujah', cursive;
+    background-repeat:repeat-y;
+    width:40%;
+    margin:auto;
+    height: 100vh;
+    overflow: hidden;
+}
+nav {
+    padding: 10px;
+    background-color: rgba(44, 9, 42, 0.88);
+    border-bottom: 1px solid rgb(240, 230, 230);
+    position: relative;
+    text-align: center;
+    height: 50px;
+}
+nav span{
+    color:rgb(177, 167, 187);
+    font-size:25px;
+}
+#menu {
+    font-size: 35px;
+    font-weight: 50px;
+    position: absolute;
+    top:10px;
+    bottom: 10px;
+    left:10px;
+}
+.new-game-div {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.new-game-div, .start-level{
+    color:rgb(238, 237, 240);
+    text-align: center;
+}
+
+#new-game-btn{
+    background-color:transparent;
+    border-radius: 50%;
+    border: 5px solid rgb(238, 237, 240);
+    padding: 15px;
+    width:200px;
+    height: 200px;
+    text-align: center;
+    cursor: pointer;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+#new-game-btn>span,.start-level>h1{
+    font-size: 45px;
+}
+
+#new-game-btn>span:hover{
+    color:rgb(8, 7, 7);
+}
+
+#play-game-container, #finish-game-container{
+    display: none;
+    text-align: center;
+}
+
+.game-div-subcontainer {
+    display:flex;
+    height: 100vh;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.top-bar-div, .bottom-bar-div, .middle-bar-div {
+    position: relative;
+    text-align: center;
+    color:aliceblue;
+    padding: 20px;
+    height: 250px; 
+}
+
+.middle-bar-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-btn, .quiz-btn {
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    border: 5px solid white;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    font-size: 40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-btn {
+    cursor:auto;
+}
+
+#btn1{
+    top: 0;
+    left: 0;
+    transform: translate(-35%, -40%);
+}
+
+#btn2{
+    top: 0;
+    right: 0;
+    transform: translate(+40%, -37%);
+}
+
+#btn3{
+    bottom:0;
+    left: 0;
+    transform: translate(-37%, 30%);
+}
+
+#btn4{
+    bottom: 0;
+    right: 0;
+    transform: translate(+40%, +30%);
+}
+
+.circle-btn:hover, #new-game-btn:hover{
+    background-color: rgb(238, 237, 240);
+    color:rgb(8, 7, 7);
+}
+
+#finish-game-nav{
+    display: flex;
+    justify-content: space-between;
+}
+#back-new-game-h1, #buy-time-div, #back-arrow{
+    cursor:pointer;
+}
+
+.blue-box{
+    width: 80%;
+    height: 140px;
+    margin:50px auto 25px auto;
+    background-color: rgb(50, 113, 223);
+    border: 3px solid white;
+    border-radius: 2px;
+    padding: 5px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Lobster&family=Niconne&family=PT+Sans&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container"> 
+        <div id="start-game-container">
+            <nav>
+                <span id="menu" class="material-symbols-outlined">menu</span>
+                <span>ABC - Game</span>
+            </nav>
+            <div class="new-game-div">
+                <div id="new-game-btn">
+                    <span>New Game</span>                
+                </div>
+            </div>
+            <div class="start-level">
+                <h2>Your current highscore</h2>
+                <h1>Level 0</h1>
+            </div>
+        </div>       
+        
+        <div id="play-game-container">
+            <div class="game-div-subcontainer">
+                <div class="top-bar-div">
+                    <h3 id="current-level-h3"></h3>
+                    <h4 id="timer-h4"></h4>
+                    <div id="btn1" class="circle-btn"><span></span></div>
+                    <div id="btn2" class="circle-btn"><span></span></div>
+                </div>
+                <div class="middle-bar-div">
+                    <div class="quiz-btn"><span id="quiz-text"></span> </div>
+                </div>
+                <div class="bottom-bar-div">
+                    <div id="btn3" class="circle-btn"><span></span></div>
+                    <div id="btn4" class="circle-btn"><span></span></div>
+                </div>
+            </div>
+        </div>
+        <div id="finish-game-container">
+            <nav id="finish-game-nav">
+                <span id="back-arrow" class="material-symbols-outlined">
+                arrow_back_ios
+                </span>
+                <p style="margin:0; font-size:25px;">Results</p>
+            </nav>
+            <div>
+                <h1>Game Over</h1>
+                <h3 id="finish-level"></h3>
+            </div>
+            <div id="buy-time-div" class="blue-box" >
+                <h2>Not Enough Time? <br> Buy Extra Time!</h2>
+            </div>
+            <div id="start-new-game" class="blue-box">
+                <h1 id="back-new-game-h1">Start New <br> Game</h1>
+            </div>
+        </div>   
+    </div>
+    <script type="module" src="./scripts/script.js"></script>
+    
+</body>
+</html>
